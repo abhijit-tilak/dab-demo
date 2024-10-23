@@ -1,0 +1,2 @@
+[packages]
+main = abhijit_dabs.main:main
