@@ -26,7 +26,7 @@ targets:
     default: true
     workspace:
       host: https://e2-demo-field-eng.cloud.databricks.com
-      root_path: /Workspace/Users/abhijit.tilak@databricks.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/abhijit.tilak@databricks.com/.bundle/${bundle.target}/${bundle.name}
     permissions:
       - user_name: abhijit.tilak@databricks.com
         level: CAN_MANAGE
@@ -38,7 +38,7 @@ targets:
     workspace:
       host: https://e2-demo-field-eng.cloud.databricks.com
       # We explicitly specify /Workspace/Users/abhijit.tilak@databricks.com to make sure we only have a single copy.
-      root_path: /Workspace/Users/abhijit.tilak@databricks.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/abhijit.tilak@databricks.com/.bundle/${bundle.target}/${bundle.name}
     permissions:
       - user_name: abhijit.tilak@databricks.com
         level: CAN_MANAGE
