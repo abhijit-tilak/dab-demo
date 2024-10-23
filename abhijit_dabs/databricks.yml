@@ -25,8 +25,14 @@ targets:
     mode: production
     default: true
     workspace:
-      host: https://e2-demo-west.cloud.databricks.com
-
+      host: https://e2-demo-field-eng.cloud.databricks.com
+      root_path: /Workspace/Users/abhijit.tilak@databricks.com/.bundle/${bundle.name}/${bundle.target}
+    permissions:
+      - user_name: abhijit.tilak@databricks.com
+        level: CAN_MANAGE
+    run_as:
+      user_name: abhijit.tilak@databricks.com
+    
   prod:
     mode: production
     workspace:
