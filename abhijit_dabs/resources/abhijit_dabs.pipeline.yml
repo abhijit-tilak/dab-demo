@@ -1,0 +1,15 @@
+# The main pipeline for abhijit_dabs
+resources:
+  pipelines:
+    abhijit_dabs_pipeline:
+      name: abhijit_dabs_pipeline
+      catalog: shared
+      target: abhijit_dabs_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+      clusters:
+        - label: "default"
+          num_workers: 2
+      configuration:
+        bundle.sourcePath: ${workspace.file_path}/src
